@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/social_network?useSSL=false}
+    username: root
+    password: testtest
+
+flyway:
+  user: root
+  password: testtest
+
+logging:
+  level:
+    org.springframework: ERROR
+
+server:
+  port : 80
